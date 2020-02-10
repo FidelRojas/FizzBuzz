@@ -10,5 +10,12 @@ class FizzBuzzTest {
 		String esperado ="1";
 		assertEquals(esperado,resultado);
 	}
+	@Test
+	public void deveriaRetornarDosAlEnviarDos(){
+		String resultado=FizzBuzz.generar(2);
+		String esperado ="2";
+		assertEquals(esperado,resultado);
+	}
+	
 
 }
