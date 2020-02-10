@@ -1,25 +1,35 @@
 
 public class FizzBuzz {
-	public static void generar() {
-		for(int i = 0; i < 100; i++)
-		{
+	public static String generar(int i) {
+		
 			if (i % 3 == 0 && i % 5 == 0)
 			{
-				System.out.println("FizzBuzz");                    
+				return("FizzBuzz");                    
 			}
 			else 
 				if(i % 3 == 0)
 				{
-					System.out.println("Fizz");
+					return("Fizz");
 				}
 				else 
 					if(i % 5 == 0)
 					{
-						System.out.println("Buzz");
+						return("Buzz");
 					}
 					else
-						System.out.println(i);
+						return(Integer.toString(i));
         }
+	
+	public static void fizzBuzz(int numero)
+	{
+		for(int i = 0; i < numero; i++)
+		{
+			System.out.println(generar(i));
+		}
+	}
+	public static void main(String[] args)
+	{
+		fizzBuzz(10);
 	}
 	
 }
