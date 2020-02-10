@@ -22,5 +22,11 @@ class FizzBuzzTest {
 		String esperado ="Fizz";
 		assertEquals(esperado,resultado);
 	}
+	@Test
+	public void deveriaRetornarBuzzAlEnviar5(){
+		String resultado=FizzBuzz.generar(5);
+		String esperado ="Buzz";
+		assertEquals(esperado,resultado);
+	}
 
 }
